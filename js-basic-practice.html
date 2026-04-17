@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 基础知识练习</title>
+</head>
+<body>
+    <h1>JavaScript 基础知识练习</h1>
+    <p>请按 F12 打开浏览器控制台，查看输出结果。</p>
+
+    <script>
+        // 1. 变量定义与变量类型
+        let userName = "杨媛";
+        const age = 20;
+        let isStudent = true;
+        let score;
+
+        console.log("=== 1. 变量定义与类型 ===");
+        console.log("姓名：", userName, "类型：", typeof userName);
+        console.log("年龄：", age, "类型：", typeof age);
+        console.log("是否为学生：", isStudent, "类型：", typeof isStudent);
+        console.log("分数：", score, "类型：", typeof score);
+
+        // 2. 表达式与运算
+        console.log("\n=== 2. 表达式与运算 ===");
+        let a = 10;
+        let b = 3;
+        console.log("加法：", a + b);
+        console.log("减法：", a - b);
+        console.log("乘法：", a * b);
+        console.log("除法：", a / b);
+        console.log("取余：", a % b);
+        console.log("拼接字符串：", "我是" + userName + "，今年" + age + "岁");
+
+        // 3. 流程控制：条件判断
+        console.log("\n=== 3. 流程控制：条件判断 ===");
+        if (age >= 18) {
+            console.log("你已经成年啦！");
+        } else {
+            console.log("你还是未成年人哦~");
+        }
+
+        // 3. 流程控制：循环
+        console.log("\n=== 3. 流程控制：for循环 ===");
+        for (let i = 1; i <= 3; i++) {
+            console.log("循环第" + i + "次");
+        }
+
+        // 4. 函数定义与调用
+        console.log("\n=== 4. 函数定义与调用 ===");
+        function greet(name) {
+            return "你好，" + name + "！欢迎学习JavaScript~";
+        }
+
+        function calculateSquare(num) {
+            return num * num;
+        }
+
+        console.log(greet(userName));
+        console.log("10的平方是：", calculateSquare(10));
+    </script>
+</body>
+</html>
